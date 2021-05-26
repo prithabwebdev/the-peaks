@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+.header{
+  background-color: rgb(16 16 118);
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card {
+  background-color: rgb(16 16 118);
+  width: 235px;
+  height: 120px;
+  margin: 5px;
+  padding: 16px;
+  display: inline-flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: start;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.card a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background-color: rgb(16 16 118);
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  margin: 2px 8px 2px 2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bookmarkIcon{
+  margin-right: 7px
+}
+
+.searchbar {
+  position: relative;
+  right: 0px;
+  top: 20px;
+}
+
+.searchInputField{
+  background-color: rgb(16 16 118);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  opacity: 0;
+}
+.searchInputField:focus-visible{
+  background: #4240c8fc;
+  opacity: 1;
+  outline: 0;
+  border-bottom: 3px solid #fff;
+}
+.flex-container h1{
+  margin: 0;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 60px;
+}
+
+.flex-item-left {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.flex-item-right {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bookmarkbtn{
+  position: relative;
+  right: 0px;
+  top: 0px;
+}
+
+.subheading{
+  display: contents;
+}
+
+.newsdetails-card {
+ align-self: center;
+ width: 435px;
+ background: linear-gradient(120deg, #f0f0f0 20%, #f9f9f9 30%); 
+ border-radius: 0px;
+ padding: 20px 40px;
+ margin: 8px 60px;
+ box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.06);
+ transition: 0.3s;
+}
+
+.newsdetails-card:hover {
+ box-shadow: none;
+ transform: translateY(2px)
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #13065a;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+::placeholder {
+  color: #f5f3f3c5;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.datewiseSelection{
+  padding: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.datewiseSelection option{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.positioning {
+  display: inline-flex;
 }
